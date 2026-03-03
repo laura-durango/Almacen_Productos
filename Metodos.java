@@ -8,13 +8,13 @@ public class Metodos {
         for (int i = 0; i < m.length; i++) { //filas
             for (int j = 0; j < m.length; j++) { // columnas
                 ObjProducto o = new ObjProducto(); //para poder acceder a los metodos y atributos de la clase objetual y acceder a cada uno de los valores 
-                 System.out.println("Ingrese el nombre del producto en la posición [\" + i + \"][\" + j + \"]:");
+                 System.out.println("Ingrese el nombre del producto en la celda (" + i + ", " + j + "):");
                  o.setNombre(sc.next());
                  System.out.println( " Ingrese el precio del producto:");
                  o.setPrecio(sc.nextInt());
                  System.out.println("Ingrese la cantidad del producto");
                  o.setCantidad(sc.nextInt());
-                 sc.nextInt();//borrar espacio de memoria 
+                 
 
                  m[i][j] = o;
 
